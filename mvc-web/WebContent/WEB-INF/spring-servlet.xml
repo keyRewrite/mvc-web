@@ -1,18 +1,107 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
- xmlns:context="http://www.springframework.org/schema/context"
- xmlns:p="http://www.springframework.org/schema/p"
- xmlns:mvc="http://www.springframework.org/schema/mvc"
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://www.springframework.org/schema/beans
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
       http://www.springframework.org/schema/context
       http://www.springframework.org/schema/context/spring-context.xsd
       http://www.springframework.org/schema/mvc
       http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
-     <!-- 启动注解驱动的Spring MVC功能，注册请求url和注解POJO类方法的映射-->
-     <mvc:annotation-driven />
-     <!-- 启动包扫描功能，以便注册带有@Controller、@Service、@repository、@Component等注解的类成为spring的bean -->
-     <context:component-scan base-package="com.key.mvcweb" />
-     <!-- 对模型视图名称的解析，在请求时模型视图名称添加前后缀 -->
-     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" p:prefix="/WEB-INF/view/" p:suffix=".jsp" />
+	<!-- 启动注解驱动的Spring MVC功能，注册请求url和注解POJO类方法的映射 -->
+	<mvc:annotation-driven />
+	<!-- 启动包扫描功能，以便注册带有@Controller、@Service、@repository、@Component等注解的类成为spring的bean -->
+	<context:component-scan base-package="com.key.mvcweb" />
+	<!-- 对模型视图名称的解析，在请求时模型视图名称添加前后缀 -->
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+		p:prefix="/view/" p:suffix=".jsp" />
 </beans>
+
+<!--静态文件的访问 -->
+<mvc:resources mapping="/images/**" location="/images/"
+	cache-period="31556926" />
+<mvc:resources mapping="/common/**" location="/common/"
+	cache-period="31556926" />
+<mvc:resources mapping="/resource/**" location="/resource/"
+	cache-period="31556926" />
+<mvc:resources mapping="/css/**" location="/css/"
+	cache-period="31556926" />
+<mvc:resources mapping="/js/**" location="/js/"
+	cache-period="31556926" />
+
+
+<bean id="sessionFactory"
+	class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean"><!--注解专用session -->
+	<property name="dataSource">
+		<ref bean="dataSource" />
+	</property>
+	<property name="hibernateProperties">
+		<props>
+			<prop key="hibernate.dialect">
+				org.hibernate.dialect.MySQLDialect
+			</prop>
+			<prop key="hibernate.show_sql">true</prop>
+		</props>
+	</property>
+
+	<property name="annotatedClasses"><!--看，mappingresource消失了 -->
+		<list>
+			<value>Sand.mas.model.User</value>
+		</list>
+	</property>
+</bean>
+
+<!-- 配置事务管理器bean,使用HibernateTransactionManager事务管理器 -->
+<bean id="transactionManager"
+	class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+	<!-- 为事务管理器注入sessionFactory" -->
+	<property name="sessionFactory" ref="sessionFactory" />
+</bean>
+<!-- 注解实现事务 -->
+<tx:annotation-driven transaction-manager="transactionManager"
+	proxy-target-class="true" />
+</beans>
+
+<!--指定实现JPA的适配器-->
+<bean id="hibernateJpaVendorAdapter"
+	class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+	<property name="databasePlatform" value="org.hibernate.dialect.MySQLDialect" />
+</bean>
+
+<!-- Jpa 事务配置 -->
+<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+	<property name="entityManagerFactory" ref="entityManagerFactory" />
+</bean>
+
+<!-- Spring Data Jpa配置 -->
+<!-- <jpa:repositories base-package="cn.ibeans" transaction-manager-ref="transactionManager" 
+	entity-manager-factory-ref="entityManagerFactory"/> -->
+
+<!-- 支持json返回 -->
+<bean
+	class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+	<property name="messageConverters">
+		<list>
+			<ref bean="mappingJacksonHttpMessageConverter" />
+		</list>
+	</property>
+</bean>
+
+<bean id="mappingJacksonHttpMessageConverter"
+	class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+	<property name="supportedMediaTypes">
+		<list>
+			<value>application/json;charset=UTF-8</value>
+		</list>
+	</property>
+</bean>
+<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+	<property name="driverClassName" value="com.mysql.jdbc.Driver">
+	</property>
+	<property name="url" value="jdbc:mysql://localhost:3306/test"></property>
+	<property name="username" value="root" />
+	<property name="password" value="1234" />
+</bean> 
+
+ <!-- JSR303 Validator定义 -->  
+    <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean" />
