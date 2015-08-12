@@ -27,4 +27,12 @@ public class RestConstroller {
 	public String registPost() {
 		return "/welcome";
 	}
+	
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public ModelAndView registPosts(HttpServletRequest request,
+			HttpServletResponse response,
+			ModelMap modelMap) throws Exception{
+		
+		return new ModelAndView("login",modelMap);
+	}
 }
