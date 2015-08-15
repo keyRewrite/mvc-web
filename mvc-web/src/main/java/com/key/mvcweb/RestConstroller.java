@@ -29,10 +29,19 @@ public class RestConstroller {
 	}
 	
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public ModelAndView registPosts(HttpServletRequest request,
+	public ModelAndView login(HttpServletRequest request,
 			HttpServletResponse response,
 			ModelMap modelMap) throws Exception{
 		
 		return new ModelAndView("login",modelMap);
 	}
+	
+	@RequestMapping(value = "/register", method = RequestMethod.GET)
+	public ModelAndView registerPosts(HttpServletRequest request,
+			HttpServletResponse response,
+			ModelMap modelMap) throws Exception{
+		
+		return new ModelAndView("register",modelMap);
+	}
+	
 }

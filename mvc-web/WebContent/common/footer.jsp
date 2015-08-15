@@ -10,6 +10,10 @@
 <script src="<%=basePath%>resource/js/hplus.js?v=2.2.0"></script>
 <script src="<%=basePath%>resource/js/plugins/pace/pace.min.js"></script>
 <script src="<%=basePath%>resource/js/plugins/layer/layer.min.js"></script>
-<script src="<%=basePath%>resource/js/plugins/layer/layer.min.js"></script>
-
-
+<!-- iCheck -->
+<script src="<%=basePath%>resource/js/plugins/iCheck/icheck.min.js"></script>
+<!-- jQuery.validate -->
+<script src="<%=basePath%>resource/js/plugins/validate/jquery.validate.min.js"></script>
+<script src="<%=basePath%>resource/js/plugins/validate/messages_zh.min.js"></script>
+<script src="<%=basePath%>resource/js/plugins/validate/jquery.metadata.js"></script>
+<script src="<%=basePath%>resource/js/bootstrap3-validation.js"></script>
