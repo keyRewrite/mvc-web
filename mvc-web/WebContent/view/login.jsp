@@ -1,16 +1,16 @@
-<%@ page isELIgnored="false" %> 
+<%@ page isELIgnored="false"%>
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@include file="../common/top.jsp"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html>
 <head>
 <title>Login</title>
 <META HTTP-EQUIV="pragma" CONTENT="no-cache">
 <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
 <META HTTP-EQUIV="expires" CONTENT="0">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
-<body class="gray-bg">
+<body>
 
 	<div class="middle-box text-center loginscreen  animated fadeInDown">
 		<div>
@@ -60,27 +60,28 @@
 		$.ajax({
 		type:"POST",
 		dataType:"json",
-		url:WebRoot+"/encryot",
+		url:WebRoot+"encryot",
 		data:{},
-		async:false, 
 		success:function(data){
-  			alert("strPublicKeyExponent"+data.strPublicKeyExponent);
-			alert("strPublicKeyModulus"+data.strPublicKeyModulus);  
+  			//alert(data.strPublicKeyExponent); 
+  			//alert(data.strPublicKeyModulus+""); 
+  			$("#strPublicKeyExponent").val(data.strPublicKeyExponent);
+  			$("#strPublicKeyModulus").val(data.strPublicKeyModulus+"");
+  			
 		}
 	
 	});
 	});
 	   function cmdEncrypt() {
-		 var strPublicKeyExponent='<%=request.getAttribute("strPublicKeyExponent") %>';
-		 var strPublicKeyModulus='<%=request.getAttribute("strPublicKeyModulus") %>';
+		 var strPublicKeyExponent=$("#strPublicKeyExponent").val();
+		 var strPublicKeyModulus=$("#strPublicKeyModulus").val();
          setMaxDigits(129);
-         alert(strPublicKeyExponent);
          var key = new RSAKeyPair(strPublicKeyExponent,"",strPublicKeyModulus);
          var useMD5Twice = $.md5($.md5($("#username").val()));
          var pwdMD5Twice = $.md5($.md5($("#pass").val()));
          var pwdRtn = encryptedString(key, pwdMD5Twice);
-         $("#pass").attr("value", pwdRtn);
-         $("#username").attr("value", useMD5Twice);
+         $("#pass").val(pwdRtn);
+         $("#username").val(useMD5Twice);
          $("#signupForm").submit();
          return;
          

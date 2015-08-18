@@ -2,9 +2,10 @@ package com.key.mvcbase.controller;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.ServletRequestDataBinder;
 import org.springframework.web.servlet.mvc.multiaction.MultiActionController;
-
+@Controller
 public class BaseController extends MultiActionController {
 
 	@Override
