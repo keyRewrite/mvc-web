@@ -18,18 +18,18 @@
 			</div>
 			<h3>欢迎注册 H+</h3>
 			<p>创建一个H+新账户</p>
-			<form class="m-t" role="form" action="login.html">
+			<form class="m-t" role="form" action="">
 				<div class="form-group">
-					<input type="text" class="form-control" placeholder="请输入用户名"
-						required="">
+					<input type="text" id="user" name="user" class="form-control"
+						placeholder="请输入用户名" required="">
 				</div>
 				<div class="form-group">
-					<input type="password" class="form-control" placeholder="请输入密码"
-						required="">
+					<input type="password" id="pass" name="pass" class="form-control"
+						placeholder="请输入密码" required="">
 				</div>
 				<div class="form-group">
-					<input type="password" class="form-control" placeholder="请再次输入密码"
-						required="">
+					<input type="password" id="passagain" name="passagain"
+						class="form-control" placeholder="请再次输入密码" required="">
 				</div>
 				<div class="form-group text-left">
 					<div class="checkbox i-checks">
@@ -38,8 +38,8 @@
 						</label>
 					</div>
 				</div>
-				<button type="submit" class="btn btn-primary block full-width m-b">注
-					册</button>
+				<button type="button" onclick="goregister()"
+					class="btn btn-primary block full-width m-b">注 册</button>
 
 				<p class="text-muted text-center">
 					<small>已经有账户了？</small><a href="javascript:void(0);"
@@ -49,19 +49,36 @@
 			</form>
 		</div>
 	</div>
-	<script>
+
+<%@include file="../common/footer.jsp"%>
+<script src="<%=basePath%>resource/js/encrypt/jQuery.md5.js"></script>
+<script>
 		$(document).ready(function() {
 			$('.i-checks').iCheck({
 				checkboxClass : 'icheckbox_square-green',
 				radioClass : 'iradio_square-green',
 			});
 		});
+		
+		function goregister() {
+			var user=$("#user").val();
+			var pass=$("#pass").val();
+			var pwdMD5Twice = $.md5($.md5(pass));
+			$.ajax({
+				type:"POST",
+				dataType:"json",
+				url:WebRoot+"newregister",
+				data:{"user":user,"pwdMD5Twice":pwdMD5Twice},
+				success:function(data){
+		  			
+				}
+			
+			});
+		};
+		
 		function sigup() {
-			var WebRoot="<%=basePath%>";
-			window.location.href = WebRoot + "login";
-		}
-	</script>
-
-	<%@include file="../common/footer.jsp"%>
+		window.location.href = WebRoot + "login";
+	}
+</script>
 </body>
 </html>

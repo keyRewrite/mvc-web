@@ -21,17 +21,16 @@ public class SiginConstroller {
 	@RequestMapping(value = "/sigin", method = RequestMethod.POST)
 	public ModelAndView login(HttpServletRequest request,
 			HttpServletResponse response, ModelMap modelMap) throws Exception {
-		String userMD5Twice = request.getParameter("username");
+		String user = request.getParameter("username");
 		String passMD5TwiceRSA = request.getParameter("pass");
 		String strPublicKeyExponent=request.getParameter("strPublicKeyExponent");
-		log.debug("userMD5Twice:" + userMD5Twice + " ,passMD5TwiceRSA:"
+		log.debug("userMD5Twice:" + user + " ,passMD5TwiceRSA:"
 				+ passMD5TwiceRSA);
 			
 //		doLogin(userMD5Twice,passMD5TwiceRSA);
 		MD5Util md5Util = new MD5Util();
 		// md5解码后
 		log.debug("MD5解密...");
-		String user = md5Util.convertMD5(md5Util.convertMD5(userMD5Twice));
 		String passRSA = md5Util
 				.convertMD5(md5Util.convertMD5(passMD5TwiceRSA));
 		log.debug("user:" + user + ", passRSA:" + passRSA);

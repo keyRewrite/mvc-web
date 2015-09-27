@@ -1,5 +1,7 @@
 package com.key.mvcbase.service;
 
-public interface BaseService {
+import java.io.Serializable;
+
+public interface BaseService<T, PK extends Serializable> {
 
 }

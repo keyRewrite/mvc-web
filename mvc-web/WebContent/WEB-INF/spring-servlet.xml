@@ -26,12 +26,16 @@
 
 	<!-- 启动包扫描功能，以便注册带有@Controller、@Service、@repository、@Component等注解的类成为spring的bean -->
 	<context:component-scan base-package="com.key.mvcweb" />
+	<mvc:annotation-driven />
+	<!-- 基于注释的事务，当注释中发现@Transactional时，使用id为“transactionManager”的事务管理器 -->
+	<!-- 如果没有设置transaction-manager的值，则spring以缺省默认的事务管理器来处理事务，默认事务管理器为第一个加载的事务管理器 -->
+	<!-- <tx:annotation-driven transaction-manager="transactionManager" /> -->
 	<!-- 对模型视图名称的解析，在请求时模型视图名称添加前后缀 -->
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
 		p:prefix="/view/" p:suffix=".jsp" />
 
-<!-- json注解 -->
+	<!-- 注解 -->
 	<bean
 		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
 		<property name="messageConverters">
@@ -51,36 +55,5 @@
 				<value>text/html;charset=UTF-8</value>
 			</list>
 		</property>
-	</bean>
-	<!-- <bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">注解专用session 
-		<property name="dataSource"> <ref bean="dataSource" /> </property> <property 
-		name="hibernateProperties"> <props> <prop key="hibernate.dialect"> org.hibernate.dialect.MySQLDialect 
-		</prop> <prop key="hibernate.show_sql">true</prop> </props> </property> <property 
-		name="annotatedClasses">看，mappingresource消失了 <list> <value>Sand.mas.model.User</value> 
-		</list> </property> </bean> -->
-
-	<!-- 配置事务管理器bean,使用HibernateTransactionManager事务管理器 -->
-	<!-- <bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager"> 
-		为事务管理器注入sessionFactory" <property name="sessionFactory" ref="sessionFactory" 
-		/> </bean> -->
-	<!--指定实现JPA的适配器 -->
-	<!-- <bean id="hibernateJpaVendorAdapter" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"> 
-		<property name="databasePlatform" value="org.hibernate.dialect.MySQLDialect" 
-		/> </bean> -->
-
-	<!-- Jpa 事务配置 -->
-	<!-- <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager"> 
-		<property name="entityManagerFactory" ref="entityManagerFactory" /> </bean> -->
-
-	<!-- Spring Data Jpa配置 -->
-	<!-- <jpa:repositories base-package="cn.ibeans" transaction-manager-ref="transactionManager" 
-		entity-manager-factory-ref="entityManagerFactory"/> -->
-
-	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
-		<property name="driverClassName" value="com.mysql.jdbc.Driver">
-		</property>
-		<property name="url" value="jdbc:mysql://localhost:3306/test"></property>
-		<property name="username" value="root" />
-		<property name="password" value="1234" />
 	</bean>
 </beans>

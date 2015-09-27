@@ -4,6 +4,25 @@
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="mvc-common.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mvc-common/mvc-common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mvc-app.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mvc-app/mvc-app">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mvc-collocate.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mvc-collocate/mvc-collocate">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mvc-ui.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mvc-ui/mvc-ui">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mvc-core.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mvc-core/mvc-core">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mvc-base.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mvc-base/mvc-base">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="mvc-web"/>
         <property name="java-output-path" value="/mvc-web/target/classes"/>
     </wb-module>

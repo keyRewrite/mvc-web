@@ -1,11 +1,9 @@
 package com.key.mvcbase.dao;
 
 import java.io.Serializable;
-import java.math.BigInteger;
 import java.util.List;
-import java.util.Map;
-
-import org.hibernate.Session;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+import org.springframework.data.repository.PagingAndSortingRepository;
 
 /**
  * 数据库基本操作类
@@ -15,8 +13,11 @@ import org.hibernate.Session;
  * Date:2015-8-12 Time:上午6:30:32
  * 
  */
+ 
+public interface BaseDao<T, ID extends Serializable>{
 
-public interface BaseDao<T> {
+ 
+ 
 	
 
 	/**
@@ -25,7 +26,6 @@ public interface BaseDao<T> {
 	 * @param o
 	 * @return
 	 */
-	public Serializable save(T o);
 
 	/**
 	 * 删除一个对象

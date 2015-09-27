@@ -17,3 +17,6 @@
 <script src="<%=basePath%>resource/js/plugins/validate/messages_zh.min.js"></script>
 <script src="<%=basePath%>resource/js/plugins/validate/jquery.metadata.js"></script>
 <script src="<%=basePath%>resource/js/bootstrap3-validation.js"></script>
+<script>
+var WebRoot="<%=basePath%>";
+</script>

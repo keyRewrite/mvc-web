@@ -3,6 +3,12 @@
 	<name>mvc-web</name>
 	<comment></comment>
 	<projects>
+		<project>mvc-common</project>
+		<project>mvc-app</project>
+		<project>mvc-collocate</project>
+		<project>mvc-ui</project>
+		<project>mvc-core</project>
+		<project>mvc-base</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

@@ -77,11 +77,11 @@
 		 var strPublicKeyModulus=$("#strPublicKeyModulus").val();
          setMaxDigits(129);
          var key = new RSAKeyPair(strPublicKeyExponent,"",strPublicKeyModulus);
-         var useMD5Twice = $.md5($.md5($("#username").val()));
+        // var useMD5Twice = $.md5($.md5($("#username").val()));
          var pwdMD5Twice = $.md5($.md5($("#pass").val()));
          var pwdRtn = encryptedString(key, pwdMD5Twice);
          $("#pass").val(pwdRtn);
-         $("#username").val(useMD5Twice);
+        // $("#username").val(useMD5Twice);
          $("#signupForm").submit();
          return;
          
