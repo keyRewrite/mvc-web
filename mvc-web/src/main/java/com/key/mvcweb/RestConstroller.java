@@ -47,17 +47,6 @@ public class RestConstroller {
 		return new ModelAndView("register",modelMap);
 	}
 	
-	@RequestMapping(value = "/newregister", method = RequestMethod.POST)
-	public ModelAndView newregisterPosts(HttpServletRequest request,
-			HttpServletResponse response,
-			ModelMap modelMap) throws Exception{
-		 String pwdMD5Twice=request.getParameter("pwdMD5Twice");
-		 String user=request.getParameter("user");
-		 User userInfo=new User();
-		 userInfo.setUserName(user);
-		 userInfo.setPass(pwdMD5Twice);
-		// userDaoImpl.save(userInfo);
-		return new ModelAndView("register",modelMap);
-	}
+ 
 	
 }

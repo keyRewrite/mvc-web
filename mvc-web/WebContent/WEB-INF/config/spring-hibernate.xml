@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.0.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+        ">
+	<!-- 搜寻 service 一个 package -->
+	<context:component-scan base-package="com.key.**.service" />
+
+	<!-- jpa EntityManager 事务管理(事务开启结束回滚...) -->
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url">
+			<value><![CDATA[jdbc:mysql://localhost/SDJ?useUnicode=true&characterEncoding=utf-8]]></value>
+		</property>
+		<property name="username" value="root" />
+		<property name="password" value="123" />
+	</bean>
+	
+ <!-- 使用annotation 自动注册bean, 并保证@Required、@Autowired的属性被注入 -->
+    <context:component-scan base-package="com.key" scoped-proxy="targetClass">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Service" />
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Component" />
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Repository" />    
+    </context:component-scan>
+    
+  <!-- JPA Entity Manager 配置 -->
+	<bean id="entityManagerFactory"
+		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="packagesToScan" value="com.key.**.constroller" />
+		<property name="jpaVendorAdapter">
+			<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter" />
+		</property>
+		<property name="jpaProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		 <property name="entityManagerFactory" ref="entityManagerFactory" />
+        <property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<!-- 用log4jdbc对datasouce进行包裹实现完整的SQL语句跟踪 -->
+	<bean id="dataSource" class="net.sf.log4jdbc.Log4jdbcProxyDataSource"
+		depends-on="extSlf4jSpyLogDelegator">
+		<constructor-arg>
+			<ref bean="dataSourceSpied" />
+		</constructor-arg>
+	</bean>
+ 	<!-- Spring Data JPA配置 -->
+	<jpa:repositories base-package="com.key.**.dao" />
+</beans>
