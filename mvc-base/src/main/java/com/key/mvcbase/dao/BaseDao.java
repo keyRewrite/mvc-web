@@ -13,8 +13,11 @@ import org.springframework.data.repository.PagingAndSortingRepository;
  * Date:2015-8-12 Time:上午6:30:32
  * 
  */
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+import org.springframework.data.repository.PagingAndSortingRepository;
+
  
-public interface BaseDao<T, ID extends Serializable>{
+public interface BaseDao<T, PK extends Serializable>{
 
  
  
@@ -23,31 +26,33 @@ public interface BaseDao<T, ID extends Serializable>{
 	/**
 	 * 保存一个对象
 	 * 
-	 * @param o
+	 * @param entity
 	 * @return
 	 */
-
+	public void save(T entity);
 	/**
 	 * 删除一个对象
 	 * 
-	 * @param o
+	 * @param entity
 	 */
-	public void delete(T o);
+	public void delete(T entity);
 
 	/**
 	 * 更新一个对象
 	 * 
-	 * @param o
+	 * @param entity
 	 */
-	public void update(T o);
+	public void update(T entity);
 
 	/**
 	 * 保存或更新对象
 	 * 
-	 * @param o
+	 * @param entity
 	 */
-	public void saveOrUpdate(T o);
 
+	public void saveOrUpdate(T entity);
+	
+	 
 	/**
 	 * 查询
 	 * 
