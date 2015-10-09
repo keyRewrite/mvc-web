@@ -1,20 +1,24 @@
 package com.key.mvcweb.user.action;
 
+import javax.annotation.Resources;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+
 import com.key.mvcweb.user.bean.User;
 import com.key.mvcweb.user.dao.UserDaoImpl;
 
 @Controller
 public class UserConstroller {
-	private UserDaoImpl userDaoImpl=new UserDaoImpl();
+	@Autowired
+	private UserDaoImpl userDaoImpl;
 	public UserConstroller() {
 	}
 

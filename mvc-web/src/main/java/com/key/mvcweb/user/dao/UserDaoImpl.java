@@ -3,6 +3,8 @@ package com.key.mvcweb.user.dao;
 import java.io.Serializable;
 import java.util.List;
 
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -12,13 +14,17 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.key.mvcbase.dao.BaseDao;
 import com.key.mvcbase.dao.BaseDaoImpl;
+import com.key.mvcweb.user.bean.User;
 @Transactional  
 @Repository("UserDao") 
 public class UserDaoImpl<T, ID extends Serializable> extends BaseDaoImpl<T,ID>{
 
-	@Override
-	public void save(T entity) {
-		super.save(entity);
+	@Autowired
+	private SessionFactory sessionFactory;
+	
+	public void save(User entity) {
+		sessionFactory.getCurrentSession().save(entity);
+		
 	}
 
 	@Override

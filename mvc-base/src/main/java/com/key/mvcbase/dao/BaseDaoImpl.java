@@ -12,6 +12,8 @@ import javax.annotation.Resource;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -20,11 +22,12 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 import org.slf4j.LoggerFactory;
-@Transactional  
-@Repository("BaseDao")  
+@Transactional 
+@Repository("baseDaoImpl")
 public class BaseDaoImpl<T, ID extends Serializable> implements BaseDao<T, ID> {
 	private final Logger logger = LoggerFactory.getLogger(BaseDaoImpl.class);
 	private Class<T> entityClass;
+	@Autowired
 	protected SessionFactory sessionFactory;
 
 	public BaseDaoImpl() {
@@ -54,31 +57,36 @@ public class BaseDaoImpl<T, ID extends Serializable> implements BaseDao<T, ID> {
 	}
 
 	protected Session getSession() {
-		return sessionFactory.getCurrentSession();
+		/*if (sessionFactory.getCurrentSession() == null) {
+			return sessionFactory.openSession();
+		} else {
+			return sessionFactory.getCurrentSession();
+		}*/
+		return sessionFactory.openSession();
 	}
 
 	public void save(T entity) {
 		getSession().save(entity);
-		logger.info(entity.getClass().getSimpleName()+":has save!");
+		logger.debug(entity.getClass().getSimpleName() + ":has save!");
 	}
 
 	public void delete(T entity) {
 		getSession().delete(entity);
-		logger.info(entity.getClass().getSimpleName()+":has delete!");
+		logger.debug(entity.getClass().getSimpleName() + ":has delete!");
 	}
 
 	public void update(T entity) {
-		 getSession().update(entity);
-		 logger.info(entity.getClass().getSimpleName()+":has update!");
+		getSession().update(entity);
+		logger.debug(entity.getClass().getSimpleName() + ":has update!");
 	}
 
 	public void saveOrUpdate(T entity) {
 		getSession().saveOrUpdate(entity);
-		 logger.info(entity.getClass().getSimpleName()+":has saveOrUpdate!");
+		logger.debug(entity.getClass().getSimpleName() + ":has saveOrUpdate!");
 	}
 
 	public List<T> find(String hql) {
-		List<T> t = (List<T>)getSession().createQuery(hql).list();
+		List<T> t = (List<T>) getSession().createQuery(hql).list();
 		return t;
 	}
 
