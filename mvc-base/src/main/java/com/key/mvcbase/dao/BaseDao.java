@@ -2,6 +2,7 @@ package com.key.mvcbase.dao;
 
 import java.io.Serializable;
 import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
@@ -15,13 +16,11 @@ import org.springframework.data.repository.PagingAndSortingRepository;
  */
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
- 
-public interface BaseDao<T, PK extends Serializable>{
-
- 
- 
-	
+@Transactional
+public interface BaseDao<T, ID extends Serializable> {
 
 	/**
 	 * 保存一个对象
@@ -30,12 +29,20 @@ public interface BaseDao<T, PK extends Serializable>{
 	 * @return
 	 */
 	public void save(T entity);
+
 	/**
 	 * 删除一个对象
 	 * 
 	 * @param entity
 	 */
 	public void delete(T entity);
+	
+	/**
+	 * 删除一个对象 by ID
+	 * 
+	 * @param entity
+	 */
+	public void deleteById(String entityName, Object id);
 
 	/**
 	 * 更新一个对象
@@ -51,15 +58,30 @@ public interface BaseDao<T, PK extends Serializable>{
 	 */
 
 	public void saveOrUpdate(T entity);
-	
-	 
+
 	/**
 	 * 查询
 	 * 
 	 * @param hql
 	 * @return
 	 */
-	public List<T> find(String hql);
+	public List<T> findAll(String hql);
+
+	/**
+	 * 单个条件查询
+	 * 
+	 * @param hql
+	 * @return
+	 */
+	public List<T> findOne(String hql, Object value);
+
+	/**
+	 * ID查询
+	 * 
+	 * @param entityName , id
+	 * @return
+	 */
+	public T findById(String entityName, Object id);
 
 	/**
 	 * 查询集合
@@ -69,6 +91,8 @@ public interface BaseDao<T, PK extends Serializable>{
 	 * @return
 	 */
 	public List<T> find(String hql, Object[] param);
+	
+	public List<T> find(String hql);
 
 	/**
 	 * 查询集合
@@ -77,7 +101,7 @@ public interface BaseDao<T, PK extends Serializable>{
 	 * @param param
 	 * @return
 	 */
-	public List<T> find(String hql, List<Object> param);
+	public List<T> findByList(String hql, List<Object> param);
 
 	/**
 	 * 查询集合(带分页)
@@ -90,7 +114,8 @@ public interface BaseDao<T, PK extends Serializable>{
 	 *            每页显示几条记录
 	 * @return
 	 */
-	public List<T> find(String hql, Object[] param, Integer page, Integer rows);
+	public List<T> findByPage(String hql, Object[] param, Integer page,
+			Integer rows);
 
 	/**
 	 * 查询集合(带分页)
@@ -101,7 +126,8 @@ public interface BaseDao<T, PK extends Serializable>{
 	 * @param rows
 	 * @return
 	 */
-	public List<T> find(String hql, List<Object> param, Integer page, Integer rows);
+	public List<T> findByPageForList(String hql, List<Object> param,
+			Integer page, Integer rows);
 
 	/**
 	 * 获得一个对象
@@ -120,7 +146,7 @@ public interface BaseDao<T, PK extends Serializable>{
 	 * @param param
 	 * @return Object
 	 */
-	public T get(String hql, Object[] param);
+	public T getOne(String hql, Object[] param);
 
 	/**
 	 * 获得一个对象

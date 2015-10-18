@@ -9,8 +9,8 @@
    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
    http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
-
-
+ 	<context:annotation-config />  
+	<context:component-scan base-package="com.key.*" />
 	<!-- 配置数据源 -->
 	<bean name="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
@@ -29,24 +29,17 @@
 				<prop key="hibernate.hbm2ddl.auto">update</prop>
 				<prop key="hibernate.show_sql">true</prop>
 				<prop key="hibernate.format_sql">true</prop>
-				<prop key="current_session_context_class">thread</prop>
+				<prop key="hibernate.current_session_context_class">org.springframework.orm.hibernate4.SpringSessionContext
+				</prop>
 			</props>
 		</property>
-		<property name="packagesToScan">
-			<list>
-				<value>com.key.mvcweb</value>
-				<value>com.key.mvcbase</value>
-			</list>
-		</property>
+		  <property name="packagesToScan">
+       <list>
+            <value>com.key.*</value>
+        </list>
+      </property>
 	</bean>
-
-	<bean id="baseDaoImpl" class="com.key.mvcbase.dao.BaseDaoImpl">
-		<property name="sessionFactory" ref="sessionFactory" />
-	</bean>
-	<bean id="UserDao" class="com.key.mvcweb.user.dao.UserDaoImpl">
-		<property name="sessionFactory" ref="sessionFactory" />
-	</bean>
-
+	 
 	<!-- 配置一个事务管理器 -->
 	<!-- <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager"> 
 		<property name="sessionFactory" ref="sessionFactory" /> </bean> 配置事务，使用代理的方式 
@@ -57,22 +50,35 @@
 		<prop key="insert*">PROPAGATION_REQUIRED,-Exception</prop> <prop key="modify*">PROPAGATION_REQUIRED,-myException</prop> 
 		<prop key="delete*">PROPAGATION_REQUIRED</prop> <prop key="*">PROPAGATION_REQUIRED</prop> 
 		</props> </property> </bean> -->
-	<bean id="txManager"
-		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-		<property name="dataSource" ref="dataSource" />
+	<!-- 配置事务管理器 -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
-	<tx:advice id="txAdvice" transaction-manager="txManager">
+
+	<!-- 使用annotation定义事务 -->
+	<tx:annotation-driven transaction-manager="transactionManager" />
+
+	<!-- 配置事务的传播特性 -->
+
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
 		<tx:attributes>
 			<tx:method name="save*" propagation="REQUIRED" />
 			<tx:method name="add*" propagation="REQUIRED" />
 			<tx:method name="create*" propagation="REQUIRED" />
+			<tx:method name="update*" propagation="REQUIRED" />
+			<tx:method name="del*" propagation="REQUIRED" />
 			<tx:method name="insert*" propagation="REQUIRED" />
+			<tx:method name="get*" read-only="true" propagation="REQUIRED" />
 			<tx:method name="*" read-only="true" />
 		</tx:attributes>
 	</tx:advice>
 
+	<!-- 配置参与事务的类 -->
 	<aop:config proxy-target-class="true">
-		<aop:advisor advice-ref="txAdvice" pointcut="execution(* com.key.*(..))" />
+		<aop:pointcut id="servicesPointcut"
+			expression="execution(* com.key.mvcbase.dao.*.*(..))" />
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="servicesPointcut" />
 	</aop:config>
 
 </beans>

@@ -6,8 +6,12 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
 import com.key.mvcbase.bean.BaseEntity;
+
 import javax.persistence.Table;
+
+import org.springframework.transaction.annotation.Transactional;
 
 @Entity
 @Table(name ="tbl_user_info")
@@ -21,10 +25,10 @@ public class User extends BaseEntity {
     @Column(name="age")
     private Integer age;
     
-    @Column(name="pass",length=300)
+    @Column(name="pass",length=500)
     private String pass;
     
-    @Column(name="username",length=50)
+    @Column(name="user_name",length=50)
     private String userName;
     
     
