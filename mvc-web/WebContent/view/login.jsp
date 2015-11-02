@@ -57,11 +57,11 @@
 	<script>
 	$(document).ready(function() {
 		var WebRoot="<%=basePath%>";
-		$.ajax({
+/* 		$.ajax({
 		type:"POST",
 		dataType:"json",
 		url:WebRoot+"encryot",
-		data:{},
+		data:{type:"login"},
 		success:function(data){
   			//alert(data.strPublicKeyExponent); 
   			//alert(data.strPublicKeyModulus+""); 
@@ -70,18 +70,18 @@
   			
 		}
 	
-	});
+	}); */
 	});
 	   function cmdEncrypt() {
-		 var strPublicKeyExponent=$("#strPublicKeyExponent").val();
+		 /* var strPublicKeyExponent=$("#strPublicKeyExponent").val();
 		 var strPublicKeyModulus=$("#strPublicKeyModulus").val();
          setMaxDigits(129);
-         var key = new RSAKeyPair(strPublicKeyExponent,"",strPublicKeyModulus);
+         var key = new RSAKeyPair(strPublicKeyExponent,"",strPublicKeyModulus); */
         // var useMD5Twice = $.md5($.md5($("#username").val()));
-         var pwdMD5Twice = $.md5($.md5($("#pass").val()));
-         var pwdRtn = encryptedString(key, pwdMD5Twice);
+         var pass = $("#pass").val();
+         //var pwdRtn = encryptedString(key, pass);
+         var pwdRtn = $.md5(pass);
          $("#pass").val(pwdRtn);
-        // $("#username").val(useMD5Twice);
          $("#signupForm").submit();
          return;
          

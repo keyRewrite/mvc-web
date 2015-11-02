@@ -1,4 +1,4 @@
-package com.key.mvc_common;
+package com.key.mvccommon;
 
 /**
  * Hello world!

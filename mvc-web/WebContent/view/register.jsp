@@ -67,7 +67,7 @@
 				checkboxClass : 'icheckbox_square-green',
 				radioClass : 'iradio_square-green',
 			});
-		 
+		 <%-- 
 				var WebRoot="<%=basePath%>";
 					$.ajax({
 						type : "POST",
@@ -75,8 +75,8 @@
 						url : WebRoot + "encryot",
 						data : {},
 						success : function(data) {
-							//alert(data.strPublicKeyExponent); 
-							//alert(data.strPublicKeyModulus+""); 
+							alert(data.strPublicKeyExponent); 
+							alert(data.strPublicKeyModulus+""); 
 							$("#strPublicKeyExponent").val(
 									data.strPublicKeyExponent);
 							$("#strPublicKeyModulus").val(
@@ -84,19 +84,20 @@
 
 						}
 
-					});
+					}); --%>
 
 				});
 
 		function goregister() {
 			//公钥加密
-			var strPublicKeyExponent=$("#strPublicKeyExponent").val();
+			/* var strPublicKeyExponent=$("#strPublicKeyExponent").val();
 			var strPublicKeyModulus=$("#strPublicKeyModulus").val();
-	        setMaxDigits(129);
-	        var key = new RSAKeyPair(strPublicKeyExponent,"",strPublicKeyModulus);
+	        setMaxDigits(129); 
+	        var key = new RSAKeyPair(strPublicKeyExponent,"",strPublicKeyModulus);*/
 	        // var useMD5Twice = $.md5($.md5($("#username").val()));
-	        var pwdMD5Twice = $.md5($.md5($("#pass").val()));
-	        var pwdRtn = encryptedString(key, pwdMD5Twice);
+	        //var pwdMD5Twice = $.md5($.md5($("#pass").val()));
+	       // var pwdRtn = encryptedString(key, $("#pass").val());
+	        var pwdRtn =$.md5($("#pass").val());
 	        $("#pass").val(pwdRtn);
 	        var user = $("#user").val();
 			var pass = $("#pass").val();

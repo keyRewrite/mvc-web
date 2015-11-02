@@ -125,8 +125,7 @@ public class BaseDaoImpl<T, ID extends Serializable> implements BaseDao<T, ID> {
 	}
 
 	public Long count(String hql) {
-		// TODO Auto-generated method stub
-		return null;
+		return  (long) getSession().createQuery(hql).list().size();
 	}
 
 	public Long count(String hql, Object[] param) {

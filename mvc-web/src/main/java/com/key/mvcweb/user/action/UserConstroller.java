@@ -7,6 +7,7 @@ import javax.annotation.Resources;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,8 @@ import org.springframework.web.servlet.ModelAndView;
 import com.key.mvcweb.MD5Util;
 import com.key.mvcweb.RSAUtil;
 import com.key.mvcweb.SiginConstroller;
+import com.key.mvcweb.key.bean.Key;
+import com.key.mvcweb.key.dao.KeyDaoImpl;
 import com.key.mvcweb.user.bean.User;
 import com.key.mvcweb.user.dao.UserDao;
 import com.key.mvcweb.user.dao.UserDaoImpl;
@@ -30,7 +33,8 @@ import com.key.mvcweb.user.service.UserService;
 public class UserConstroller {
 	@Resource(name = "userService")
 	private UserService userService;
-
+	@Resource(name = "keyDaoImpl")
+	private KeyDaoImpl keyDaoImpl;
 	/**
 	 * 用户登录
 	 * 
@@ -47,36 +51,47 @@ public class UserConstroller {
 	@RequestMapping(value = "/sigin", method = RequestMethod.POST)
 	public ModelAndView login(HttpServletRequest request,
 			HttpServletResponse response, ModelMap modelMap) throws Exception {
-		//用户名
+		// 用户名
 		String user = request.getParameter("username");
-		//2次md51次rsa加密密码
-		String passMD5TwiceRSA = request.getParameter("pass");
-		//公钥
-		String strPublicKeyExponent=request.getParameter("strPublicKeyExponent");
-		log.debug("userMD5Twice:" + user + " ,passMD5TwiceRSA:"
-				+ passMD5TwiceRSA);
-			
-		MD5Util md5Util = new MD5Util();
-		// md5解码后
-		log.debug("MD5解密...");
-		String passRSA = md5Util
-				.convertMD5(md5Util.convertMD5(passMD5TwiceRSA));
-		log.debug("user:" + user + ", passRSA:" + passRSA);
-
+		// rsa加密密码
+		String pass4RSA = request.getParameter("pass");
+		// 公钥
+	/*	String strPublicKeyExponent = request
+				.getParameter("strPublicKeyExponent");
 		
+		String strPublicKeyModulus = request
+				.getParameter("strPublicKeyModulus");
+		// 查找密钥
+		List<Key> keyList = keyDaoImpl.find("from Key");
+		if (keyList.size() > 0&&StringUtils.isNotBlank(strPublicKeyExponent)&&StringUtils.isNotBlank(strPublicKeyModulus)) {
+			String modulus = keyList.get(0).getModulus();
+			String priKey = keyList.get(0).getPrivateExponent();
+			//开始解密
+			RSAUtil.decrypt(strPublicKeyModulus, pass4RSA);
+			if(){
+				
+			}
+		}
+		System.out.println("useraction  strPublicKeyExponent="
+				+ strPublicKeyExponent);
+*/
+
 		// 初始化加密工具类
-		RSAUtil rsaUtil = new RSAUtil();
+		//RSAUtil rsaUtil = new RSAUtil();
 		log.debug("正在初始化加密...");
 		// 生成密钥对
 		log.debug("已生成密钥对...");
-		
-		//byte[] raw = RSAUtil.encrypt(request.getSession().getAttribute("priKey"), orgData);
-		//rsaUtil.decrypt(strPublicKeyExponent, raw);
-		
-		List<User> userdb=userService.find("From User u where u.userName=?", new Object[]{"user"});
-		
-		if (!user.isEmpty()) {
-			if (!passRSA.isEmpty()) {
+
+		// byte[] raw =
+		// RSAUtil.encrypt(request.getSession().getAttribute("priKey"),
+		// orgData);
+		// rsaUtil.decrypt(strPublicKeyExponent, raw);
+		 
+		List<User> userdb = userService.find("From User u where u.userName='"+user+"'");
+		 
+		if (StringUtils.isNotBlank(pass4RSA)) {
+			String passdb=userdb.get(0).getPass();
+			if (passdb.equals(pass4RSA)) {
 				log.info(user + ":登录成功!");
 				return new ModelAndView("/welcome", modelMap);
 			}
@@ -89,7 +104,7 @@ public class UserConstroller {
 		modelMap.addAttribute("failed", "登录失败!");
 		return new ModelAndView("/login", modelMap);
 	}
-	
+
 	/**
 	 * 用户注册
 	 * 
