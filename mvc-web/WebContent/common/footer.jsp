@@ -20,3 +20,15 @@
 <script>
 var WebRoot="<%=basePath%>";
 </script>
+
+ 	 <script src="<%=basePath%>resource/js/jquery.min.js?v=2.1.4"></script>
+    <script src="<%=basePath%>resource/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="<%=basePath%>resource/js/plugins/layer/layer.min.js"></script>
+    <script src="<%=basePath%>resource/js/content.min.js"></script>
+    <script src="<%=basePath%>resource/js/welcome.min.js"></script>
+    
+    <script type="text/javascript" src="<%=basePath%>resource/plugins/fullavatareditor/scripts/swfobject.js"></script>
+    <script type="text/javascript" src="<%=basePath%>resource/plugins/fullavatareditor/scripts/fullAvatarEditor.js"></script>
+    <script type="text/javascript" src="<%=basePath%>resource/plugins/fullavatareditor/scripts/jQuery.Cookie.js"></script>
+    <script type="text/javascript" src="<%=basePath%>resource/plugins/fullavatareditor/scripts/test.js"></script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>

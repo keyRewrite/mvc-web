@@ -47,7 +47,7 @@
 					class="btn btn-primary block full-width m-b">注 册</button>
 
 				<p class="text-muted text-center">
-					<small>已经有账户了？</small><a href="javascript:void(0);"
+					<small>已经有账户了？</small><a href="login.jsp"
 						onclick="sigup()">点此登录</a>
 				</p>
 

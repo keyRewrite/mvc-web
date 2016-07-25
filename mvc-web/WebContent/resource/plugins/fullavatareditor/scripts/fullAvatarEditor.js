@@ -74,14 +74,14 @@ function fullAvatarEditor() {
 		};
 	};
 	swfobject.embedSWF(
-		file, 
+		file,
 		container,
 		width,
 		height,
 		version,
 		expressInstall,
 		vars,
-		params, 
+		params,
 		attributes,
 		callbackFn
 	);

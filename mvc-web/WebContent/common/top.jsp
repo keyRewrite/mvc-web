@@ -4,13 +4,16 @@
 			+ request.getServerName() + ":" + request.getServerPort()
 			+ path + "/";
 %>
-<link href="<%=basePath%>resource/css/bootstrap.min.css?v=3.4.0" rel="stylesheet">
-<link href="<%=basePath%>resource/font-awesome/css/font-awesome.css?v=4.3.0" rel="stylesheet">
 <!-- Morris -->
 <link href="<%=basePath%>resource/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
 <!-- Gritter -->
 <link href="<%=basePath%>resource/js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
-<link href="<%=basePath%>resource/css/animate.css" rel="stylesheet">
-<link href="<%=basePath%>resource/css/style.css?v=2.2.0" rel="stylesheet">
+
+<link href="<%=basePath%>resource/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+<link href="<%=basePath%>resource/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+<link href="<%=basePath%>resource/css/animate.min.css" rel="stylesheet">
+<link href="<%=basePath%>resource/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+<link rel="shortcut icon" href="<%=basePath%>resource/img/favicon.ico"> 
+
  
  

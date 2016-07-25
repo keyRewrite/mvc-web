@@ -22,7 +22,7 @@
 			<h3>欢迎使用 H+</h3>
 
 			<form class="form-horizontal m-t" method="POST" role="form"
-				action="sigin" id="signupForm">
+				action="/mvc-web/view/welcome.jsp" id="signupForm">
 				<div class="form-group">
 					<input type="hidden" name="strPublicKeyExponent" id="strPublicKeyExponent"
 						value="${strPublicKeyExponent}"> <input type="hidden"
@@ -41,8 +41,8 @@
 
 
 				<p class="text-muted text-center">
-					<a href="login.html#"><small>忘记密码了？</small></a> |<a
-						href="javascript:void(0);" onclick="register()"> 注册一个新账号</a>
+					<a href="forget.jsp"><small>忘记密码了？</small></a> 
+					|<a href="register.jsp" onclick="register()"> 注册一个新账号</a>
 				</p>
 
 			</form>
@@ -83,6 +83,7 @@
          var pwdRtn = $.md5(pass);
          $("#pass").val(pwdRtn);
          $("#signupForm").submit();
+         
          return;
          
      };

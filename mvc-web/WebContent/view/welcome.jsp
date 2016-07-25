@@ -4,7 +4,7 @@
 <html>
 
 <head>
-<title>My JSP 'hello.jsp' starting page</title>
+<title>H+</title>
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
 <%@include file="../common/top.jsp" %>
@@ -29,7 +29,7 @@
 						</a>
 						<ul class="dropdown-menu animated fadeInRight m-t-xs">
 							<li><a href="form_avatar.html">修改头像</a></li>
-							<li><a href="profile.html">个人资料</a></li>
+							<li><a href="profile.jsp">个人资料</a></li>
 							<li><a href="contacts.html">联系我们</a></li>
 							<li><a href="mailbox.html">信箱</a></li>
 							<li class="divider"></li>
@@ -44,12 +44,12 @@
 						class="fa fa-th-large"></i> <span class="nav-label">主页</span> <span
 						class="fa arrow"></span></a>
 					<ul class="nav nav-second-level">
-						<li><a href="index_1.html">主页示例一</a></li>
-						<li><a href="index_2.html">主页示例二</a></li>
-						<li><a href="index_3.html">主页示例三</a></li>
-						<li><a href="index_4.html">主页示例四</a></li>
+						<li><a href="/mvc-web/view/index/index_1.jsp">主页示例一</a></li>
+						<li><a href="/mvc-web/view/index/index_2.jsp">主页示例二</a></li>
+						<li><a href="/mvc-web/view/index/index_3.jsp">主页示例三</a></li>
+						<li><a href="/mvc-web/view/index/index_4.jsp">主页示例四</a></li>
 					</ul></li>
-				<li><a href="layouts.html"><i class="fa fa-columns"></i> <span
+				<li><a href="layouts.jsp"><i class="fa fa-columns"></i> <span
 						class="nav-label">布局</span><span
 						class="label label-danger pull-right">2.0</span></a></li>
 				<li><a href="index.html#"><i class="fa fa fa-globe"></i> <span
@@ -172,7 +172,7 @@
 				<li><a href="webim.html"><i class="fa fa-comments"></i> <span
 						class="nav-label">即时通讯</span><span
 						class="label label-danger pull-right">New</span></a></li>
-				<li><a href="css_animation.html"><i class="fa fa-magic"></i>
+				<li><a href="css_animation.jsp"><i class="fa fa-magic"></i>
 						<span class="nav-label">CSS动画</span></a></li>
 				<li><a href="index.html#"><i class="fa fa-cutlery"></i> <span
 						class="nav-label">工具 </span><span class="fa arrow"></span></a>
