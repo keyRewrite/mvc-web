@@ -99,11 +99,11 @@ public class UserConstroller {
 		} else {
 			log.error("用户名不能为空!");
 			modelMap.addAttribute("failed", "用户名不能为空!");
-			return new ModelAndView("/login", modelMap);
+			return new ModelAndView("/login/login", modelMap);
 		}
 		log.error("登录失败!");
 		modelMap.addAttribute("failed", "登录失败!");
-		return new ModelAndView("/login", modelMap);
+		return new ModelAndView("/login/login", modelMap);
 	}
 
 	/**
@@ -129,4 +129,26 @@ public class UserConstroller {
 		return new ModelAndView("register", modelMap);
 	}
 
+	/**
+	 * 用户列表查询
+	 * 2016年7月28日 21:36:37
+	 * lwq
+	 * @param request
+	 * @param response
+	 * @param modelMap
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping(value = "/queryUserList", method = RequestMethod.POST)
+	public List<User> queryUserList(HttpServletRequest request,
+			HttpServletResponse response, ModelMap modelMap) throws Exception {
+		List<User> userdb = userService.find("From User u ");
+		modelMap.addAttribute(userdb);
+		
+		return userdb;
+	}
+
+	
+	
+	
 }

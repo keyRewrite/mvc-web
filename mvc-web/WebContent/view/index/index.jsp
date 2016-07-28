@@ -71,6 +71,17 @@
                         </ul>
 
                     </li>
+                     <li>
+                        <a class="J_menuItem"><i class="glyphicon glyphicon-user"></i> <span class="nav-label">用户管理</span><span class="fa arrow"></span></a>
+                         
+                        <ul class="nav nav-second-level">
+                        <li>
+                         <a class="J_menuItem" href="<%=basePath%>user/user_info_list.jsp">用户列表</a>
+                        </li>
+                        </ul>
+                    </li>
+                      
+                    
                     <li>
                         <a class="J_menuItem" href="<%=basePath%>view/layout/layouts.jsp"><i class="fa fa-columns"></i> <span class="nav-label">布局</span></a>
                     </li>

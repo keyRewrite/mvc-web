@@ -84,7 +84,6 @@
          var pwdRtn = $.md5(pass);
          $("#pass").val(pwdRtn);
          $("#signupForm").submit();
-         
          return;
          
      };
