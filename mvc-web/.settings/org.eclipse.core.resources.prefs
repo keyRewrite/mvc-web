@@ -1,2 +1,8 @@
 eclipse.preferences.version=1
+encoding//WebContent/view/chart/graph_echarts.jsp=UTF-8
+encoding//WebContent/view/index/index.jsp=UTF-8
+encoding//WebContent/view/index/index_content.jsp=UTF-8
+encoding//WebContent/view/layout/layouts.jsp=UTF-8
+encoding//WebContent/view/page/login_v2.jsp=UTF-8
+encoding//WebContent/view/usermanager/form_avatar.jsp=UTF-8
 encoding/<project>=UTF-8

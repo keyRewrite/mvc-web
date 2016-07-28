@@ -93,7 +93,8 @@ public class UserConstroller {
 			String passdb=userdb.get(0).getPass();
 			if (passdb.equals(pass4RSA)) {
 				log.info(user + ":登录成功!");
-				return new ModelAndView("/welcome", modelMap);
+				modelMap.addAttribute("loginUser", user);
+				return new ModelAndView("/index/index", modelMap);
 			}
 		} else {
 			log.error("用户名不能为空!");

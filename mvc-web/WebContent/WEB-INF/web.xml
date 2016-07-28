@@ -7,6 +7,12 @@ PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
 		<el-ignored>false</el-ignored>
 	</jsp-config>
 
+<welcome-file-list>
+	<welcome-file>
+	view/login/login.jsp
+	</welcome-file>
+</welcome-file-list>
+
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<!-- 应用上下文配置文件 -->

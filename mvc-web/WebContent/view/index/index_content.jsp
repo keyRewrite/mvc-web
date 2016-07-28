@@ -1,7 +1,6 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<!-- Mirrored from www.zi-han.net/theme/hplus/index_v1.html?v=4.0 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:20:20 GMT -->
 <head>
 
     <meta charset="utf-8">
@@ -39,7 +38,7 @@
                 <b>当前版本：</b>v4.1.0
             </p>
             <p>
-                <b>定价：</b><span class="label label-warning">&yen;988（不开发票，不议价）</span>
+                <b>定价：</b><span class="label label-warning">&yen;0</span>
             </p>
             <br>
             <p>
@@ -489,7 +488,7 @@
                             <li>……</li>
                         </ol>
                         <hr>
-                        <p>如果需要购买H+主题，可直接付款到支付宝：<a href="javascript%3b.html">zheng-zihan@qq.com</a>，收款人：<a href="javascript%3b.html">*子涵</a>。也可以使用手机支付宝或者微信扫码支付：</p>
+                        <p>如果需要购买H+主题，可直接付款到支付宝：<a href="javascript%3b.html"></a><a href="javascript%3b.html"></a>。也可以使用手机支付宝扫码支付：</p>
                         <div class="alert alert-warning">
                             付款完成后请及时联系作者，或在付款备注中留下邮箱或QQ，方便作者及时联系您。
                             <br>如果图片太小，可以点击图片放大。

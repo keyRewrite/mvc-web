@@ -27,21 +27,21 @@
                             <span><img alt="image" class="img-circle" src="<%=basePath%>resource/img/profile_small.jpg" /></span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                 <span class="clear">
-                               <span class="block m-t-xs"><strong class="font-bold">Beaut-zihan</strong></span>
-                                <span class="text-muted text-xs block">超级管理员<b class="caret"></b></span>
+                               <span class="block m-t-xs"><strong class="font-bold"><%=request.getAttribute("loginUser") %></strong></span>
+                                <span class="text-muted text-xs block">系统管理员<b class="caret"></b></span>
                                 </span>
                             </a>
                             <ul class="dropdown-menu animated fadeInRight m-t-xs">
                                 <li><a class="J_menuItem" href="<%=basePath%>view/usermanager/form_avatar.jsp">修改头像</a>
                                 </li>
-                                <li><a class="J_menuItem" href="profile.html">个人资料</a>
+                                <li><a class="J_menuItem" href="<%=basePath%>view/usermanager/profile.jsp">个人资料</a>
                                 </li>
-                                <li><a class="J_menuItem" href="contacts.html">联系我们</a>
+                                <li><a class="J_menuItem" href="<%=basePath%>view/usermanager/contacts.jsp">联系我们</a>
                                 </li>
-                                <li><a class="J_menuItem" href="mailbox.html">信箱</a>
+                                <li><a class="J_menuItem" href="<%=basePath%>view/usermanager/mailbox.jsp">信箱</a>
                                 </li>
                                 <li class="divider"></li>
-                                <li><a href="login.html">安全退出</a>
+                                <li><a href="<%=basePath%>view/login/login.jsp">安全退出</a>
                                 </li>
                             </ul>
                         </div>
@@ -56,25 +56,23 @@
                         </a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a class="J_menuItem" href="index_v1.html" data-index="0">主页示例一</a>
+                                <a class="J_menuItem" href="<%=basePath%>view/index/index_v1.jsp" data-index="0">主页示例一</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="index_v2.html">主页示例二</a>
+                                <a class="J_menuItem" href="<%=basePath%>view/index/index_v2.jsp">主页示例二</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="index_v3.html">主页示例三</a>
+                                <a class="J_menuItem" href="<%=basePath%>view/index/index_v3.jsp">主页示例三</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="index_v4.html">主页示例四</a>
+                                <a class="J_menuItem" href="<%=basePath%>view/index/index_v4.jsp">主页示例四</a>
                             </li>
-                            <li>
-                                <a href="index_v5.html" target="_blank">主页示例五</a>
-                            </li>
+                           
                         </ul>
 
                     </li>
                     <li>
-                        <a class="J_menuItem" href="layouts.html"><i class="fa fa-columns"></i> <span class="nav-label">布局</span></a>
+                        <a class="J_menuItem" href="<%=basePath%>view/layout/layouts.jsp"><i class="fa fa-columns"></i> <span class="nav-label">布局</span></a>
                     </li>
                     <li>
                         <a href="#">
@@ -84,257 +82,257 @@
                         </a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a class="J_menuItem" href="graph_echarts.html">百度ECharts</a>
+                                <a class="J_menuItem" href="<%=basePath%>view/chart/graph_echarts.jsp">百度ECharts</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="graph_flot.html">Flot</a>
+                                <a class="J_menuItem" href="<%=basePath%>view/chart/graph_flot.jsp">Flot</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="graph_morris.html">Morris.js</a>
+                                <a class="J_menuItem" href="<%=basePath%>view/chart/graph_morris.jsp">Morris.js</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="graph_rickshaw.html">Rickshaw</a>
+                                <a class="J_menuItem" href="<%=basePath%>view/chart/graph_rickshaw.jsp">Rickshaw</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="graph_peity.html">Peity</a>
+                                <a class="J_menuItem" href="<%=basePath%>view/chart/graph_peity.jsp">Peity</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="graph_sparkline.html">Sparkline</a>
+                                <a class="J_menuItem" href="<%=basePath%>view/chart/graph_sparkline.jsp">Sparkline</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="graph_metrics.html">图表组合</a>
+                                <a class="J_menuItem" href="<%=basePath%>view/chart/graph_metrics.jsp">图表组合</a>
                             </li>
                         </ul>
                     </li>
 
                     <li>
-                        <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">信箱 </span><span class="label label-warning pull-right">16</span></a>
+                        <a href="<%=basePath%>view/mail/mailbox.jsp"><i class="fa fa-envelope"></i> <span class="nav-label">信箱 </span><span class="label label-warning pull-right">16</span></a>
                         <ul class="nav nav-second-level">
-                            <li><a class="J_menuItem" href="mailbox.html">收件箱</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/mail/mailbox.jsp">收件箱</a>
                             </li>
-                            <li><a class="J_menuItem" href="mail_detail.html">查看邮件</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/mail/mail_detail.jsp">查看邮件</a>
                             </li>
-                            <li><a class="J_menuItem" href="mail_compose.html">写信</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/mail/mail_compose.jsp">写信</a>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">表单</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li><a class="J_menuItem" href="form_basic.html">基本表单</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/form/form_basic.jsp">基本表单</a>
                             </li>
-                            <li><a class="J_menuItem" href="form_validate.html">表单验证</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/form/form_validate.jsp">表单验证</a>
                             </li>
-                            <li><a class="J_menuItem" href="form_advanced.html">高级插件</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/form/form_advanced.jsp">高级插件</a>
                             </li>
-                            <li><a class="J_menuItem" href="form_wizard.html">表单向导</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/form/form_wizard.jsp">表单向导</a>
                             </li>
                             <li>
                                 <a href="#">文件上传 <span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
-                                    <li><a class="J_menuItem" href="form_webuploader.html">百度WebUploader</a>
+                                    <li><a class="J_menuItem" href="<%=basePath%>view/form/form_webuploader.jsp">百度WebUploader</a>
                                     </li>
-                                    <li><a class="J_menuItem" href="form_file_upload.html">DropzoneJS</a>
+                                    <li><a class="J_menuItem" href="<%=basePath%>view/form/form_file_upload.jsp">DropzoneJS</a>
                                     </li>
-                                    <li><a class="J_menuItem" href="form_avatar.html">头像裁剪上传</a>
+                                    <li><a class="J_menuItem" href="<%=basePath%>view/form/form_avatar.jsp">头像裁剪上传</a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="#">编辑器 <span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
-                                    <li><a class="J_menuItem" href="form_editors.html">富文本编辑器</a>
+                                    <li><a class="J_menuItem" href="<%=basePath%>view/form/form_editors.jsp">富文本编辑器</a>
                                     </li>
-                                    <li><a class="J_menuItem" href="form_simditor.html">simditor</a>
+                                    <li><a class="J_menuItem" href="<%=basePath%>view/form/form_simditor.jsp">simditor</a>
                                     </li>
-                                    <li><a class="J_menuItem" href="form_markdown.html">MarkDown编辑器</a>
+                                    <li><a class="J_menuItem" href="<%=basePath%>view/form/form_markdown.jsp">MarkDown编辑器</a>
                                     </li>
-                                    <li><a class="J_menuItem" href="code_editor.html">代码编辑器</a>
+                                    <li><a class="J_menuItem" href="<%=basePath%>view/form/code_editor.jsp">代码编辑器</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li><a class="J_menuItem" href="suggest.html">搜索自动补全</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/form/suggest.jsp">搜索自动补全</a>
                             </li>
-                            <li><a class="J_menuItem" href="layerdate.html">日期选择器layerDate</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/form/layerdate.jsp">日期选择器layerDate</a>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">页面</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li><a class="J_menuItem" href="contacts.html">联系人</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/page/contacts.jsp">联系人</a>
                             </li>
-                            <li><a class="J_menuItem" href="profile.html">个人资料</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/page/profile.jsp">个人资料</a>
                             </li>
                             <li>
                                 <a href="#">项目管理 <span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
-                                    <li><a class="J_menuItem" href="projects.html">项目</a>
+                                    <li><a class="J_menuItem" href="<%=basePath%>view/page/projects.jsp">项目</a>
                                     </li>
-                                    <li><a class="J_menuItem" href="project_detail.html">项目详情</a>
+                                    <li><a class="J_menuItem" href="<%=basePath%>view/page/project_detail.jsp">项目详情</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li><a class="J_menuItem" href="teams_board.html">团队管理</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/page/teams_board.jsp">团队管理</a>
                             </li>
-                            <li><a class="J_menuItem" href="social_feed.html">信息流</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/page/social_feed.jsp">信息流</a>
                             </li>
-                            <li><a class="J_menuItem" href="clients.html">客户管理</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/page/clients.jsp">客户管理</a>
                             </li>
-                            <li><a class="J_menuItem" href="file_manager.html">文件管理器</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/page/file_manager.jsp">文件管理器</a>
                             </li>
-                            <li><a class="J_menuItem" href="calendar.html">日历</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/page/calendar.jsp">日历</a>
                             </li>
                             <li>
                                 <a href="#">博客 <span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
-                                    <li><a class="J_menuItem" href="blog.html">文章列表</a>
+                                    <li><a class="J_menuItem" href="<%=basePath%>view/page/blog.jsp">文章列表</a>
                                     </li>
-                                    <li><a class="J_menuItem" href="article.html">文章详情</a>
+                                    <li><a class="J_menuItem" href="<%=basePath%>view/page/article.jsp">文章详情</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li><a class="J_menuItem" href="faq.html">FAQ</a>
+                            <li><a class="J_menuItem" href="faq.jsp">FAQ</a>
                             </li>
                             <li>
                                 <a href="#">时间轴 <span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
-                                    <li><a class="J_menuItem" href="timeline.html">时间轴</a>
+                                    <li><a class="J_menuItem" href="<%=basePath%>view/page/timeline.jsp">时间轴</a>
                                     </li>
-                                    <li><a class="J_menuItem" href="timeline_v2.html">时间轴v2</a>
+                                    <li><a class="J_menuItem" href="<%=basePath%>view/page/timeline_v2.jsp">时间轴v2</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li><a class="J_menuItem" href="pin_board.html">标签墙</a>
+                            <li><a class="J_menuItem" href="pin_board.jsp">标签墙</a>
                             </li>
                             <li>
                                 <a href="#">单据 <span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
-                                    <li><a class="J_menuItem" href="invoice.html">单据</a>
+                                    <li><a class="J_menuItem" href="<%=basePath%>view/page/invoice.jsp">单据</a>
                                     </li>
-                                    <li><a class="J_menuItem" href="invoice_print.html">单据打印</a>
+                                    <li><a class="J_menuItem" href="<%=basePath%>view/page/invoice_print.jsp">单据打印</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li><a class="J_menuItem" href="search_results.html">搜索结果</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/page/search_results.jsp">搜索结果</a>
                             </li>
-                            <li><a class="J_menuItem" href="forum_main.html">论坛</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/page/forum_main.jsp">论坛</a>
                             </li>
                             <li>
                                 <a href="#">即时通讯 <span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
-                                    <li><a class="J_menuItem" href="chat_view.html">聊天窗口</a>
+                                    <li><a class="J_menuItem" href="<%=basePath%>view/page/chat_view.jsp">聊天窗口</a>
                                     </li>
-                                    <li><a class="J_menuItem" href="webim.html">layIM</a>
+                                    <li><a class="J_menuItem" href="<%=basePath%>view/page/webim.jsp">layIM</a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="#">登录注册相关 <span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
-                                    <li><a href="login.html" target="_blank">登录页面</a>
+                                    <li><a href="<%=basePath%>view/page/login.jsp" target="_blank">登录页面</a>
                                     </li>
-                                    <li><a href="login_v2.html" target="_blank">登录页面v2</a>
+                                    <li><a href="<%=basePath%>view/page/login_v2.jsp" target="_blank">登录页面v2</a>
                                     </li>
-                                    <li><a href="register.html" target="_blank">注册页面</a>
+                                    <li><a href="<%=basePath%>view/page/register.jsp" target="_blank">注册页面</a>
                                     </li>
-                                    <li><a href="lockscreen.html" target="_blank">登录超时</a>
+                                    <li><a href="<%=basePath%>view/page/lockscreen.jsp" target="_blank">登录超时</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li><a class="J_menuItem" href="404.html">404页面</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/page/404.jsp">404页面</a>
                             </li>
-                            <li><a class="J_menuItem" href="500.html">500页面</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/page/500.jsp">500页面</a>
                             </li>
-                            <li><a class="J_menuItem" href="empty_page.html">空白页</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/page/empty_page.jsp">空白页</a>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">UI元素</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li><a class="J_menuItem" href="typography.html">排版</a>
+                            <li><a class="J_menuItem" href="typography.jsp">排版</a>
                             </li>
                             <li>
                                 <a href="#">字体图标 <span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
                                     <li>
-                                        <a class="J_menuItem" href="fontawesome.html">Font Awesome</a>
+                                        <a class="J_menuItem" href="fontawesome.jsp">Font Awesome</a>
                                     </li>
                                     <li>
-                                        <a class="J_menuItem" href="glyphicons.html">Glyphicon</a>
+                                        <a class="J_menuItem" href="glyphicons.jsp">Glyphicon</a>
                                     </li>
                                     <li>
-                                        <a class="J_menuItem" href="iconfont.html">阿里巴巴矢量图标库</a>
+                                        <a class="J_menuItem" href="iconfont.jsp">阿里巴巴矢量图标库</a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="#">拖动排序 <span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
-                                    <li><a class="J_menuItem" href="draggable_panels.html">拖动面板</a>
+                                    <li><a class="J_menuItem" href="draggable_panels.jsp">拖动面板</a>
                                     </li>
-                                    <li><a class="J_menuItem" href="agile_board.html">任务清单</a>
+                                    <li><a class="J_menuItem" href="agile_board.jsp">任务清单</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li><a class="J_menuItem" href="buttons.html">按钮</a>
+                            <li><a class="J_menuItem" href="buttons.jsp">按钮</a>
                             </li>
-                            <li><a class="J_menuItem" href="tabs_panels.html">选项卡 &amp; 面板</a>
+                            <li><a class="J_menuItem" href="tabs_panels.jsp">选项卡 &amp; 面板</a>
                             </li>
-                            <li><a class="J_menuItem" href="notifications.html">通知 &amp; 提示</a>
+                            <li><a class="J_menuItem" href="notifications.jsp">通知 &amp; 提示</a>
                             </li>
-                            <li><a class="J_menuItem" href="badges_labels.html">徽章，标签，进度条</a>
+                            <li><a class="J_menuItem" href="badges_labels.jsp">徽章，标签，进度条</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="grid_options.html">栅格</a>
+                                <a class="J_menuItem" href="grid_options.jsp">栅格</a>
                             </li>
-                            <li><a class="J_menuItem" href="plyr.html">视频、音频</a>
+                            <li><a class="J_menuItem" href="plyr.jsp">视频、音频</a>
                             </li>
                             <li>
                                 <a href="#">弹框插件 <span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
-                                    <li><a class="J_menuItem" href="layer.html">Web弹层组件layer</a>
+                                    <li><a class="J_menuItem" href="layer.jsp">Web弹层组件layer</a>
                                     </li>
-                                    <li><a class="J_menuItem" href="modal_window.html">模态窗口</a>
+                                    <li><a class="J_menuItem" href="modal_window.jsp">模态窗口</a>
                                     </li>
-                                    <li><a class="J_menuItem" href="sweetalert.html">SweetAlert</a>
+                                    <li><a class="J_menuItem" href="sweetalert.jsp">SweetAlert</a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="#">树形视图 <span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
-                                    <li><a class="J_menuItem" href="jstree.html">jsTree</a>
+                                    <li><a class="J_menuItem" href="jstree.jsp">jsTree</a>
                                     </li>
-                                    <li><a class="J_menuItem" href="tree_view.html">Bootstrap Tree View</a>
+                                    <li><a class="J_menuItem" href="tree_view.jsp">Bootstrap Tree View</a>
                                     </li>
-                                    <li><a class="J_menuItem" href="nestable_list.html">nestable</a>
+                                    <li><a class="J_menuItem" href="nestable_list.jsp">nestable</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li><a class="J_menuItem" href="toastr_notifications.html">Toastr通知</a>
+                            <li><a class="J_menuItem" href="toastr_notifications.jsp">Toastr通知</a>
                             </li>
-                            <li><a class="J_menuItem" href="diff.html">文本对比</a>
+                            <li><a class="J_menuItem" href="diff.jsp">文本对比</a>
                             </li>
-                            <li><a class="J_menuItem" href="spinners.html">加载动画</a>
+                            <li><a class="J_menuItem" href="spinners.jsp">加载动画</a>
                             </li>
-                            <li><a class="J_menuItem" href="widgets.html">小部件</a>
+                            <li><a class="J_menuItem" href="widgets.jsp">小部件</a>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-table"></i> <span class="nav-label">表格</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li><a class="J_menuItem" href="table_basic.html">基本表格</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/table/table_basic.jsp">基本表格</a>
                             </li>
-                            <li><a class="J_menuItem" href="table_data_tables.html">DataTables</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/table/table_data_tables.jsp">DataTables</a>
                             </li>
-                            <li><a class="J_menuItem" href="table_jqgrid.html">jqGrid</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/table/table_jqgrid.jsp">jqGrid</a>
                             </li>
-                            <li><a class="J_menuItem" href="table_foo_table.html">Foo Tables</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/table/table_foo_table.jsp">Foo Tables</a>
                             </li>
-                            <li><a class="J_menuItem" href="table_bootstrap.html">Bootstrap Table
+                            <li><a class="J_menuItem" href="<%=basePath%>view/table/table_bootstrap.jsp">Bootstrap Table
                                 <span class="label label-danger pull-right">推荐</span></a>
                             </li>
                         </ul>
@@ -342,21 +340,21 @@
                     <li>
                         <a href="#"><i class="fa fa-picture-o"></i> <span class="nav-label">相册</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li><a class="J_menuItem" href="basic_gallery.html">基本图库</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/photos/basic_gallery.jsp">基本图库</a>
                             </li>
-                            <li><a class="J_menuItem" href="carousel.html">图片切换</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/photos/carousel.jsp">图片切换</a>
                             </li>
-                            <li><a class="J_menuItem" href="blueimp.html">Blueimp相册</a>
+                            <li><a class="J_menuItem" href="<%=basePath%>view/photos/blueimp.jsp">Blueimp相册</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a class="J_menuItem" href="css_animation.html"><i class="fa fa-magic"></i> <span class="nav-label">CSS动画</span></a>
+                        <a class="J_menuItem" href="css_animation.jsp"><i class="fa fa-magic"></i> <span class="nav-label">CSS动画</span></a>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-cutlery"></i> <span class="nav-label">工具 </span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li><a class="J_menuItem" href="form_builder.html">表单构建器</a>
+                            <li><a class="J_menuItem" href="form_builder.jsp">表单构建器</a>
                             </li>
                         </ul>
                     </li>
@@ -370,7 +368,7 @@
             <div class="row border-bottom">
                 <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
                     <div class="navbar-header"><a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
-                        <form role="search" class="navbar-form-custom" method="post" action="http://www.zi-han.net/theme/hplus/search_results.html">
+                        <form role="search" class="navbar-form-custom" method="post" action="http://www.zi-han.net/theme/hplus/search_results.jsp">
                             <div class="form-group">
                                 <input type="text" placeholder="请输入您需要查找的内容 …" class="form-control" name="top-search" id="top-search">
                             </div>
@@ -384,7 +382,7 @@
                             <ul class="dropdown-menu dropdown-messages">
                                 <li class="m-t-xs">
                                     <div class="dropdown-messages-box">
-                                        <a href="profile.html" class="pull-left">
+                                        <a href="<%=basePath%>/view/usermanager/profile.jsp" class="pull-left">
                                             <img alt="image" class="img-circle" src="<%=basePath%>resource/img/a7.jpg">
                                         </a>
                                         <div class="media-body">
@@ -398,7 +396,7 @@
                                 <li class="divider"></li>
                                 <li>
                                     <div class="dropdown-messages-box">
-                                        <a href="profile.html" class="pull-left">
+                                        <a href="<%=basePath%>view/usermanager/profile.jsp" class="pull-left">
                                             <img alt="image" class="img-circle" src="<%=basePath%>resource/img/a4.jpg">
                                         </a>
                                         <div class="media-body ">
@@ -412,7 +410,7 @@
                                 <li class="divider"></li>
                                 <li>
                                     <div class="text-center link-block">
-                                        <a class="J_menuItem" href="mailbox.html">
+                                        <a class="J_menuItem" href="<%=basePath%>view/usermanager/profile.jsp">
                                             <i class="fa fa-envelope"></i> <strong> 查看所有消息</strong>
                                         </a>
                                     </div>
@@ -425,7 +423,7 @@
                             </a>
                             <ul class="dropdown-menu dropdown-alerts">
                                 <li>
-                                    <a href="mailbox.html">
+                                    <a href="<%=basePath%>view/usermanager/mailbox.jsp">
                                         <div>
                                             <i class="fa fa-envelope fa-fw"></i> 您有16条未读消息
                                             <span class="pull-right text-muted small">4分钟前</span>
@@ -434,7 +432,7 @@
                                 </li>
                                 <li class="divider"></li>
                                 <li>
-                                    <a href="profile.html">
+                                    <a href="<%=basePath%>view/usermanager/mailbox.jsp">
                                         <div>
                                             <i class="fa fa-qq fa-fw"></i> 3条新回复
                                             <span class="pull-right text-muted small">12分钟钱</span>
@@ -444,7 +442,7 @@
                                 <li class="divider"></li>
                                 <li>
                                     <div class="text-center link-block">
-                                        <a class="J_menuItem" href="notifications.html">
+                                        <a class="J_menuItem" href="<%=basePath%>view/usermanager/mailbox.jsp">
                                             <strong>查看所有 </strong>
                                             <i class="fa fa-angle-right"></i>
                                         </a>
@@ -453,7 +451,7 @@
                             </ul>
                         </li>
                         <li class="hidden-xs">
-                            <a href="index_v1.html" class="J_menuItem" data-index="0"><i class="fa fa-cart-arrow-down"></i> 购买</a>
+                            <a href="index_v1.jsp" class="J_menuItem" data-index="0"><i class="fa fa-cart-arrow-down"></i> 购买</a>
                         </li>
                         <li class="dropdown hidden-xs">
                             <a class="right-sidebar-toggle" aria-expanded="false">
@@ -468,7 +466,7 @@
                 </button>
                 <nav class="page-tabs J_menuTabs">
                     <div class="page-tabs-content">
-                        <a href="javascript:;" class="active J_menuTab" data-id="index_v1.html">首页</a>
+                        <a href="<%=basePath%>/view/index/index.jsp" class="active J_menuTab" data-id="">首页</a>
                     </div>
                 </nav>
                 <button class="roll-nav roll-right J_tabRight"><i class="fa fa-forward"></i>
@@ -487,10 +485,10 @@
                         </li>
                     </ul>
                 </div>
-                <a href="login.html" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a>
+                <a href="<%=basePath%>view/login/login.jsp" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a>
             </div>
             <div class="row J_mainContent" id="content-main">
-                <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="<%=basePath%>view/index/index_content.jsp" frameborder="0" data-id="index_v1.html" seamless></iframe>
+                <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="<%=basePath%>view/index/index_content.jsp" frameborder="0" data-id="index_v1.jsp" seamless></iframe>
             </div>
             <div class="footer">
                 <div class="pull-right">&copy; 2014-2015 <a href="http://www.zi-han.net/" target="_blank">zihan's blog</a>
@@ -907,16 +905,12 @@
             </a>
         </div>
     </div>
-    <script src="<%=basePath%>resource/js/jquery.min.js?v=2.1.4"></script>
-    <script src="<%=basePath%>resource/js/bootstrap.min.js?v=3.3.6"></script>
+    <%@include file="../../common/footer.jsp" %>
     <script src="<%=basePath%>resource/js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="<%=basePath%>resource/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
     <script src="<%=basePath%>resource/js/plugins/layer/layer.min.js"></script>
     <script src="<%=basePath%>resource/js/hplus.min.js?v=4.1.0"></script>
     <script type="text/javascript" src="<%=basePath%>resource/js/contabs.min.js"></script>
-    <script src="<%=basePath%>resource/js/plugins/pace/pace.min.js"></script>
 </body>
 
-
-<!-- Mirrored from www.zi-han.net/theme/hplus/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:17:11 GMT -->
 </html>
