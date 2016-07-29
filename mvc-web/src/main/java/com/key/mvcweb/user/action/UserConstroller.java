@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.lang3.StringUtils;
+import org.codehaus.jackson.annotate.JsonIgnore;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.key.mvcweb.MD5Util;
@@ -94,16 +96,16 @@ public class UserConstroller {
 			if (passdb.equals(pass4RSA)) {
 				log.info(user + ":登录成功!");
 				modelMap.addAttribute("loginUser", user);
-				return new ModelAndView("/index/index", modelMap);
+				return new ModelAndView("/view/index/index", modelMap);
 			}
 		} else {
 			log.error("用户名不能为空!");
 			modelMap.addAttribute("failed", "用户名不能为空!");
-			return new ModelAndView("/login/login", modelMap);
+			return new ModelAndView("/view/login/login", modelMap);
 		}
 		log.error("登录失败!");
 		modelMap.addAttribute("failed", "登录失败!");
-		return new ModelAndView("/login/login", modelMap);
+		return new ModelAndView("/view/login/login", modelMap);
 	}
 
 	/**
@@ -139,11 +141,12 @@ public class UserConstroller {
 	 * @return
 	 * @throws Exception
 	 */
-	@RequestMapping(value = "/queryUserList", method = RequestMethod.POST)
+	@RequestMapping(value = "/queryUserList", method = RequestMethod.POST,produces="application/json;charset=UTF-8")
+	@ResponseBody
 	public List<User> queryUserList(HttpServletRequest request,
 			HttpServletResponse response, ModelMap modelMap) throws Exception {
 		List<User> userdb = userService.find("From User u ");
-		modelMap.addAttribute(userdb);
+		modelMap.addAttribute("userdb",userdb);
 		
 		return userdb;
 	}

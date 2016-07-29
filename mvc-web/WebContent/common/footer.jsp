@@ -49,3 +49,5 @@ var WebRoot="<%=basePath%>";
      <script src="<%=basePath%>resource/js/plugins/peity/jquery.peity.min.js"></script>
     <script src="<%=basePath%>resource/js/plugins/jqgrid/i18n/grid.locale-cnffe4.js?0820"></script>
     <script src="<%=basePath%>resource/js/plugins/jqgrid/jquery.jqGrid.minffe4.js?0820"></script>
+    
+      <script src="<%=basePath%>resource/js/jquery.json.js"></script>
