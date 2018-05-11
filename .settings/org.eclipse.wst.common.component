@@ -1,7 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project-modules id="moduleCoreId" project-version="1.5.0">
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
     <wb-module deploy-name="parent-mvc">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/" source-path="/mvc-web"/>
+        <wb-resource deploy-path="/" source-path="/mvc-ui"/>
+        <wb-resource deploy-path="/" source-path="/mvc-collocate"/>
+        <wb-resource deploy-path="/" source-path="/mvc-base"/>
+        <wb-resource deploy-path="/" source-path="/mvc-core"/>
+        <wb-resource deploy-path="/" source-path="/mvc-app"/>
+        <wb-resource deploy-path="/" source-path="/mvc-common"/>
         <property name="context-root" value="parent-mvc"/>
         <property name="java-output-path" value="/parent-mvc/target/classes"/>
     </wb-module>

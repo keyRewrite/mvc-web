@@ -110,7 +110,7 @@
 					"ptrsa" : pass
 				},
 				success : function(data) {
-
+					alert("注册成功！");
 				}
 
 			});

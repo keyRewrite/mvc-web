@@ -20,3 +20,263 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2018-05-06 16:02:18.153 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data E:\mvc-web -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-05-06 16:02:27.075
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-05-06 16:02:27.079
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2018-05-06 16:02:50.957 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:04.530
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\com.collabnet.subversion.merge.feature_3.0.8.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:04.532
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\net.java.dev.jna_3.4.0.t20120117_1605.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:04.534
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tigris.subversion.clientadapter.feature_1.8.2.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:04.536
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tigris.subversion.clientadapter.javahl.feature_1.7.4.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:04.537
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tigris.subversion.clientadapter.svnkit.feature_1.7.4.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:04.538
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tigris.subversion.subclipse.graph.feature_1.1.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:04.539
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tigris.subversion.subclipse.mylyn_3.0.0.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:04.541
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tigris.subversion.subclipse_1.8.8.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:04.542
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tmatesoft.svnkit_1.7.4.t20120412_2022.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:04.725
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\com.collabnet.subversion.merge.feature_3.0.8.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:04.726
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\net.java.dev.jna_3.4.0.t20120117_1605.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:04.727
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tigris.subversion.clientadapter.feature_1.8.2.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:04.728
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tigris.subversion.clientadapter.javahl.feature_1.7.4.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:04.728
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tigris.subversion.clientadapter.svnkit.feature_1.7.4.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:04.729
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tigris.subversion.subclipse.graph.feature_1.1.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:04.730
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tigris.subversion.subclipse.mylyn_3.0.0.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:04.730
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tigris.subversion.subclipse_1.8.8.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:04.731
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tmatesoft.svnkit_1.7.4.t20120412_2022.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:04.927
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\com.collabnet.subversion.merge.feature_3.0.8.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:04.928
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\net.java.dev.jna_3.4.0.t20120117_1605.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:04.929
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tigris.subversion.clientadapter.feature_1.8.2.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:04.929
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tigris.subversion.clientadapter.javahl.feature_1.7.4.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:04.930
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tigris.subversion.clientadapter.svnkit.feature_1.7.4.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:04.930
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tigris.subversion.subclipse.graph.feature_1.1.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:04.931
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tigris.subversion.subclipse.mylyn_3.0.0.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:04.931
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tigris.subversion.subclipse_1.8.8.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:04.932
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tmatesoft.svnkit_1.7.4.t20120412_2022.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:05.115
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\com.collabnet.subversion.merge.feature_3.0.8.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:05.116
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\net.java.dev.jna_3.4.0.t20120117_1605.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:05.117
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tigris.subversion.clientadapter.feature_1.8.2.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:05.117
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tigris.subversion.clientadapter.javahl.feature_1.7.4.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:05.118
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tigris.subversion.clientadapter.svnkit.feature_1.7.4.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:05.119
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tigris.subversion.subclipse.graph.feature_1.1.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:05.119
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tigris.subversion.subclipse.mylyn_3.0.0.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:05.120
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tigris.subversion.subclipse_1.8.8.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2018-05-06 16:03:05.120
+!MESSAGE Unable to acquire PluginConverter service during generation for: E:\eclipse-jee-luna-SR2-win32-x86_64\eclipse\features\org.tmatesoft.svnkit_1.7.4.t20120412_2022.jar.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-05-06 16:03:44.251
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-05-06 16:03:44.252
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2018-05-07 09:20:13.167 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-05-07 09:20:32.268
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-05-07 09:20:32.271
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2018-05-07 09:26:34.119 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data E:\mvc-web -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-05-07 09:26:47.010
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-05-07 09:26:47.012
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-07 09:27:39.095
+!MESSAGE The POM for com.key:mvc-base:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-07 09:27:39.118
+!MESSAGE The POM for com.key:mvc-core:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-07 09:27:39.147
+!MESSAGE The POM for com.key:mvc-common:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-05-07 09:27:39.170
+!MESSAGE The POM for com.key:mvc-ui:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.core.jobs 4 2 2018-05-07 09:28:31.398
+!MESSAGE An internal error occurred during: "Loading descriptor for mvc-web.".
+!STACK 0
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$1DiagnosticWrappedException: org.eclipse.emf.ecore.xmi.FeatureNotFoundException: Feature 'el-ignored' not found. (platform:/resource/mvc-web/WebContent/WEB-INF/web.xml, 7, 15)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.handleDemandLoadException(ResourceSetImpl.java:319)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:278)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.getResource(ProjectResourceSetImpl.java:1064)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.getModelResource(JEE5ModelProvider.java:185)
+	at org.eclipse.jst.jee.model.internal.Web25ModelProvider.getModelObject(Web25ModelProvider.java:44)
+	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.getModelObject(JEE5ModelProvider.java:231)
+	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider.loadProviders(AbstractMergedModelProvider.java:261)
+	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider.access$2(AbstractMergedModelProvider.java:255)
+	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider$LoadModelsWorkspaceRunnable.run(AbstractMergedModelProvider.java:278)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider.loadModel(AbstractMergedModelProvider.java:249)
+	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider.getMergedModel(AbstractMergedModelProvider.java:219)
+	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider.getModelObject(AbstractMergedModelProvider.java:139)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.emf.ecore.xmi.FeatureNotFoundException: Feature 'el-ignored' not found. (platform:/resource/mvc-web/WebContent/WEB-INF/web.xml, 7, 15)
+	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.reportUnknownFeature(XMLHandler.java:2027)
+	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.handleUnknownFeature(XMLHandler.java:1991)
+	at org.eclipse.emf.ecore.xmi.impl.XMIHandler.handleUnknownFeature(XMIHandler.java:145)
+	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.handleFeature(XMLHandler.java:1935)
+	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.processElement(XMLHandler.java:1030)
+	at org.eclipse.emf.ecore.xmi.impl.XMIHandler.processElement(XMIHandler.java:81)
+	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.startElement(XMLHandler.java:1008)
+	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.startElement(XMLHandler.java:719)
+	at org.eclipse.emf.ecore.xmi.impl.XMIHandler.startElement(XMIHandler.java:163)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.startElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(Unknown Source)
+	at org.eclipse.emf.ecore.xmi.impl.XMLLoadImpl.load(XMLLoadImpl.java:175)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:261)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.demandLoad(ProjectResourceSetImpl.java:811)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	... 14 more

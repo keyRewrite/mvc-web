@@ -1,0 +1,107 @@
+2018-05-07 09:27:39,010 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-web:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-web\pom.xml.
+2018-05-07 09:27:39,094 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.key:mvc-base:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2018-05-07 09:27:39,117 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.key:mvc-core:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2018-05-07 09:27:39,147 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.key:mvc-common:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2018-05-07 09:27:39,170 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.key:mvc-ui:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2018-05-07 09:27:44,323 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-app:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-app\pom.xml.
+2018-05-07 09:27:49,397 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:27:49,397 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-app\src\main\resources
+2018-05-07 09:27:49,400 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:27:49,400 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-app\src\test\resources
+2018-05-07 09:27:49,403 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-app:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-app\pom.xml.
+2018-05-07 09:27:51,265 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-base:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-base\pom.xml.
+2018-05-07 09:27:52,452 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-collocate:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-collocate\pom.xml.
+2018-05-07 09:27:52,895 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:27:52,895 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-app\src\main\resources
+2018-05-07 09:27:52,897 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:27:52,898 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-app\src\test\resources
+2018-05-07 09:27:53,765 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-common:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-common\pom.xml.
+2018-05-07 09:27:54,044 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-base:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-base\pom.xml.
+2018-05-07 09:27:56,256 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:27:56,257 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-base\src\main\resources
+2018-05-07 09:27:56,259 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:27:56,259 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-base\src\test\resources
+2018-05-07 09:27:56,426 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-collocate:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-collocate\pom.xml.
+2018-05-07 09:27:58,416 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:27:58,416 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-collocate\src\main\resources
+2018-05-07 09:27:58,421 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:27:58,422 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-collocate\src\test\resources
+2018-05-07 09:27:59,284 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-app:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-app\pom.xml.
+2018-05-07 09:28:00,864 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-base:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-base\pom.xml.
+2018-05-07 09:28:01,351 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-collocate:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-collocate\pom.xml.
+2018-05-07 09:28:01,931 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-common:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-common\pom.xml.
+2018-05-07 09:28:02,425 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-core:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-core\pom.xml.
+2018-05-07 09:28:02,845 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:28:02,846 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-base\src\main\resources
+2018-05-07 09:28:02,847 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:28:02,848 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-base\src\test\resources
+2018-05-07 09:28:03,148 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-ui:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-ui\pom.xml.
+2018-05-07 09:28:03,646 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-web:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-web\pom.xml.
+2018-05-07 09:28:04,179 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-collocate:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-collocate\pom.xml.
+2018-05-07 09:28:05,364 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-web:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-web\pom.xml.
+2018-05-07 09:28:05,790 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:28:05,791 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-collocate\src\main\resources
+2018-05-07 09:28:05,792 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:28:05,793 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-collocate\src\test\resources
+2018-05-07 09:28:06,075 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-common:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-common\pom.xml.
+2018-05-07 09:28:08,172 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:28:08,172 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-common\src\main\resources
+2018-05-07 09:28:08,173 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:28:08,174 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-common\src\test\resources
+2018-05-07 09:28:08,445 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-core:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-core\pom.xml.
+2018-05-07 09:28:10,001 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:28:10,001 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-core\src\main\resources
+2018-05-07 09:28:10,003 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:28:10,004 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-core\src\test\resources
+2018-05-07 09:28:10,224 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-ui:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-ui\pom.xml.
+2018-05-07 09:28:12,409 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:28:12,410 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-ui\src\main\resources
+2018-05-07 09:28:12,411 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:28:12,412 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-ui\src\test\resources
+2018-05-07 09:28:13,786 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-web:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-web\pom.xml.
+2018-05-07 09:28:15,667 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:28:15,667 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-web\src\main\resources
+2018-05-07 09:28:15,670 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:28:15,670 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-web\src\test\resources
+2018-05-07 09:28:15,975 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-app:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-app\pom.xml.
+2018-05-07 09:28:17,535 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-base:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-base\pom.xml.
+2018-05-07 09:28:18,150 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-collocate:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-collocate\pom.xml.
+2018-05-07 09:28:18,812 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-common:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-common\pom.xml.
+2018-05-07 09:28:19,358 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-core:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-core\pom.xml.
+2018-05-07 09:28:19,800 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-ui:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-ui\pom.xml.
+2018-05-07 09:28:20,304 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-web:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-web\pom.xml.
+2018-05-07 09:28:20,801 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-collocate:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-collocate\pom.xml.
+2018-05-07 09:28:21,264 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-web:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-web\pom.xml.
+2018-05-07 09:28:21,878 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-base:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-base\pom.xml.
+2018-05-07 09:28:22,379 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-ui:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-ui\pom.xml.
+2018-05-07 09:28:22,858 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-app:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-app\pom.xml.
+2018-05-07 09:28:23,291 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-core:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-core\pom.xml.
+2018-05-07 09:28:23,715 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.key:mvc-common:0.0.1-SNAPSHOT @ E:\mvc-web\mvc-common\pom.xml.
+2018-05-07 09:28:35,144 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:28:35,145 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-app\src\main\resources
+2018-05-07 09:28:35,146 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:28:35,146 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-app\src\test\resources
+2018-05-07 09:28:36,821 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:28:36,822 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-base\src\main\resources
+2018-05-07 09:28:36,823 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:28:36,824 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-base\src\test\resources
+2018-05-07 09:28:38,465 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:28:38,465 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-collocate\src\main\resources
+2018-05-07 09:28:38,466 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:28:38,467 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-collocate\src\test\resources
+2018-05-07 09:28:40,089 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:28:40,090 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-common\src\main\resources
+2018-05-07 09:28:40,091 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:28:40,092 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-common\src\test\resources
+2018-05-07 09:28:41,638 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:28:41,638 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-core\src\main\resources
+2018-05-07 09:28:41,640 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:28:41,640 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-core\src\test\resources
+2018-05-07 09:28:43,166 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:28:43,166 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-ui\src\main\resources
+2018-05-07 09:28:43,170 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:28:43,170 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-ui\src\test\resources
+2018-05-07 09:28:43,477 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:28:43,477 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-web\src\main\resources
+2018-05-07 09:28:43,478 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-07 09:28:43,479 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvc-web\mvc-web\src\test\resources

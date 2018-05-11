@@ -24,7 +24,7 @@
 			<value><![CDATA[jdbc:mysql://localhost/SDJ?useUnicode=true&characterEncoding=utf-8]]></value>
 		</property>
 		<property name="username" value="root" />
-		<property name="password" value="123" />
+		<property name="password" value="123456" />
 	</bean>
 	
  <!-- 使用annotation 自动注册bean, 并保证@Required、@Autowired的属性被注入 -->

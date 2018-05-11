@@ -1,2 +1,4 @@
+activeuserprofiles=SOLA;Team;sola-PC
 eclipse.preferences.version=1
 org.eclipse.rse.systemtype.local.systemType.defaultUserId=sola
+useridperkey=sola-PC.Local\=sola;
